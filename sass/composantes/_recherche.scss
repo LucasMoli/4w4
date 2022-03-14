@@ -1,0 +1,30 @@
+.recherche{
+    background-color: rgba(rgb(255, 255, 255), .1);
+    width: 250px;
+    position: relative;
+
+    &__input{
+        background-color: transparent;
+        width: 100%;
+        transition: .25s;
+        border: none;
+        outline: none;
+        &:focus{
+            background-color: rgba(#000, .2);
+        }
+    }
+    &__bouton{
+        position: absolute;
+        top:0;
+        right:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        svg{
+        
+        }
+    }
+}

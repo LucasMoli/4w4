@@ -2,13 +2,15 @@
     font-family: $font__titre;
     background-color: $color__background-footer;
     padding: 15px;
+    color: white;
 
     &__menu{ // .site__footer__menu
-
+          display: flex;
       &__ul{ // .site__footer__menu__ul
           display : flex;
           list-style-type: none;
-          justify-content: center;
+          justify-content:center;
+          padding-right: 5rem;
           .menu-item { // .site__footer__menu__ul .menu-item
               margin : 10px 5px;
             a{ // .site__footer__menu__ul .menu-item a
@@ -35,4 +37,46 @@
 .footer__author {
   color: $color__font-footer;
   text-align: center;
+}
+
+.site__footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+  &__colonne{
+    display: flex;
+    padding-left: 5rem;
+    justify-content: space-around;
+
+    section{
+      display: flex;
+      flex-direction: column;
+      //border: 1px solid yellow;
+      padding: 10px 15px;
+      background-color: rgba($color__background-header,.8);
+      border-radius: 5px;
+      box-shadow: rgb(255, 255, 255) 1px -1px 10px;
+      flex: 0 0 30%;
+      justify-content: space-between;
+    }
+    .footer__article{
+      padding-right: 8rem;
+      
+    }
+    .footer__lien{
+
+    }
+    .footer__adresse{
+
+    }
+  }
+
+
+  &__ligne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

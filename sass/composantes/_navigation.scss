@@ -1,6 +1,10 @@
+//bouton burger 
+#chk-burger{
+    display: none;
+}
 
-#burger {
-    position : absolute;
+#burger{
+    position:absolute;
     transition : transform .3s;
     transform : rotate(0);
 }
@@ -10,13 +14,18 @@
 }
 .menu-principal-container {
     display : none;
+    padding-top: 0px;
+    @media screen and (min-width:700px){
+        padding-top: 40px;
+    }
+    
 }
 #chk-burger:checked ~ .menu-principal-container{
     display : block;
 }
 
 
-.menu-principal-container{}
+/*.menu-principal-container{}*/
 .menu{
     list-style-type: none;
     margin : 0;
