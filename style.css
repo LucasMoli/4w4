@@ -615,11 +615,21 @@ COMPOSANTES
   color: white;
 }
 
-.footer__titre,
-.footer__presentation,
-.footer__author {
-  color: #ffcabc;
+.footer__text {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
   text-align: center;
+  color: #ffcabc;
+}
+
+.footer__text__presentation {
+  justify-content: space-between;
+}
+
+.footer__text__author {
+  justify-content: space-between;
+  padding-left: 5rem;
 }
 
 .site__footer {

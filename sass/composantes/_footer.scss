@@ -32,12 +32,27 @@
     }
   }
 
-.footer__titre,
-.footer__presentation,
-.footer__author {
-  color: $color__font-footer;
-  text-align: center;
+.footer__text{
+display: flex;
+align-items: center;
+flex-direction: row;
+text-align: center;
+
+
+color: $color__font-footer;
+  &__titre{
+
+  }
+  &__presentation{
+    justify-content: space-between;
+  }
+  &__author{
+    justify-content: space-between;
+    padding-left: 5rem;
+  }
 }
+
+
 
 .site__footer{
   display: flex;
