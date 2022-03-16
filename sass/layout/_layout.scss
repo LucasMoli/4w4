@@ -1,6 +1,12 @@
 /*
 theme name: Lab 2 Lemieux Florence
 */
+@mixin rgba__main{
+    background-color: rgba($color__background-main,.8);
+}
+@mixin rgba__header{
+    background-color: rgba($color__background-header,.8);
+}
 
 .site {
     //background-color: rgb(122, 176, 207);
@@ -24,7 +30,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__header{
     grid-area: header;  
-    background-color: rgba($color__background-header,.8);
+    @include rgba__header;
 }
 
 .site__barre{
@@ -36,7 +42,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__main{
     grid-area: main;
-    background-color: rgba($color__background-main,.8);
+    @include rgba__main;
 }
 
 .site__footer{

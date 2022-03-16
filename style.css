@@ -581,7 +581,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #8293e3;
+  background-color: #1d2339;
   padding: 15px;
   color: white;
 }
@@ -768,7 +768,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__footer {
   grid-area: footer;
-  background-color: #8293e3;
+  background-color: #1d2339;
 }
 
 .site {
