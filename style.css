@@ -552,6 +552,7 @@ COMPOSANTES
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-top: 1.5rem;
 }
 
 .menu-item {
@@ -584,10 +585,13 @@ COMPOSANTES
   background-color: #1d2339;
   padding: 15px;
   color: white;
+  justify-content: center;
 }
 
 .site__footer__menu {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .site__footer__menu__ul {
@@ -623,12 +627,8 @@ COMPOSANTES
   color: #ffcabc;
 }
 
-.footer__text__presentation {
-  justify-content: space-between;
-}
-
 .footer__text__author {
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 5rem;
 }
 
@@ -640,8 +640,8 @@ COMPOSANTES
 
 .site__footer__colonne {
   display: flex;
-  padding-left: 5rem;
   justify-content: space-around;
+  padding-top: 2rem;
 }
 
 .site__footer__colonne section {
@@ -653,6 +653,7 @@ COMPOSANTES
   box-shadow: white 1px -1px 10px;
   flex: 0 0 30%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .site__footer__colonne .footer__article {
@@ -663,6 +664,7 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .erreur-404 h1 {

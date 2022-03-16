@@ -1,4 +1,5 @@
 <footer class="site__footer">
+<?php get_search_form() ?>
     <!--première rangé de colonne -->
     <div class="site__footer__colonne">
         <section class="article">
@@ -35,11 +36,11 @@ wp_nav_menu(array(
                     "menu_class"=>"site__footer__menu__ul",
 
                     "link_before"=>$icone)); ?>
-                    <?php get_search_form() ?>
+                    
 
 <section class="footer__text">
     <p class="footer__text__presentation">3800, rue Sherbrooke Est - Collège de Maisonneuve</p> 
-    <h3 class="footer__text__author">tout droit réservé, copyright</h3>
+    <p class="footer__text__author">tout droit réservé, copyright</p>
 </section>
                     
                     
