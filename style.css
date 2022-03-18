@@ -411,9 +411,9 @@ COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
   padding: 10px 15px;
-  background-color: #905ed0;
+  background-color: #4120a9;
+  box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
-  box-shadow: #39443e 1px -1px 10px;
 }
 
 .formation {

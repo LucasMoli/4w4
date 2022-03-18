@@ -1,9 +1,13 @@
+@mixin contour{
+        background-color: $color__background-cours;
+        box-shadow: rgb(57, 64, 68) 1px -1px 10px;
+        border-radius: 5px;
+}
+
 .site__main {
     
     padding: 10px 15px;
-    background-color: $color__background-main;
-    border-radius: 5px;
-    box-shadow: rgb(57, 68, 62) 1px -1px 10px;
+    @include contour;
 }
 
 .formation {
@@ -25,9 +29,7 @@
     }
     
     &__cours {
-        background-color: $color__background-cours;
-        box-shadow: rgb(57, 64, 68) 1px -1px 10px;
-        border-radius: 5px;
+        @include contour;
         margin: 10px;
         display: flex;
         flex-direction: column;
