@@ -8,6 +8,15 @@ theme name: Lab 2 Lemieux Florence
     background-color: rgba($color__background-header,.8);
 }
 
+@mixin grid{
+    grid-template-columns: auto;
+        grid-template-areas:
+            "sidebar"
+            "header"
+            "main"
+            "footer";
+}
+
 .site {
     //background-color: rgb(122, 176, 207);
     background-color: $color__background-body;
@@ -30,7 +39,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__header{
     grid-area: header;  
-    @include rgba__header
+    @include rgba__header;
 }
 
 .site__barre{
@@ -65,23 +74,13 @@ theme name: Lab 2 Lemieux Florence
 @media screen and (min-width : $largeur__media--tablette)
 {
     .site {
-        grid-template-columns: auto;
-        grid-template-areas:
-            "sidebar"
-            "header"
-            "main"
-            "footer";
+        @include grid;
     }
 
     .home {
         display: grid;
         gap : 10px;
-        grid-template-columns: auto;
-        grid-template-areas:
-            "sidebar"
-            "header"
-            "main"
-            "footer";
+        @include grid;
     }
 
     
