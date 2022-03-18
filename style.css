@@ -7,7 +7,7 @@ Description: Ce thème servira de base de développement pour l'ensemble du cour
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: cidw-4w4
+Text Domain: cidw-4w4 
 
 */
 /* ---------------------------------------------------------
@@ -426,6 +426,9 @@ COMPOSANTES
   color: #f0aa97;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .formation__liste {
@@ -518,12 +521,18 @@ COMPOSANTES
   }
 }
 
+.sidebar-entete_1 {
+  border: 0px;
+  padding-bottom: -20px;
+}
+
 #chk-burger {
   display: none;
 }
 
 #burger {
   position: absolute;
+  z-index: 10;
   transition: transform .3s;
   transform: rotate(0);
 }
@@ -532,9 +541,21 @@ COMPOSANTES
   transform: rotate(90deg);
 }
 
+#chk-burger:checked ~ .menu-principal-container {
+  transform: translateX(0);
+}
+
 .menu-principal-container {
-  display: none;
+  transition: transform .3s;
+  display: block;
+  position: absolute;
   padding-top: 0px;
+  z-index: 1;
+  background-color: #8293e3;
+  border-radius: 5px;
+  box-shadow: #39443e 1px -1px 10px;
+  transform: translateX(-300px);
+  /*.menu-principal-container{}*/
 }
 
 @media screen and (min-width: 700px) {
@@ -543,39 +564,43 @@ COMPOSANTES
   }
 }
 
-#chk-burger:checked ~ .menu-principal-container {
-  display: block;
-}
-
-/*.menu-principal-container{}*/
-.menu {
+.menu-principal-container .menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
   padding-top: 1.5rem;
 }
 
-.menu-item {
+.menu-principal-container .menu-item {
   margin: 0;
   padding: 0;
 }
 
-.menu-item a {
+.menu-principal-container .menu-item a {
   display: block;
   text-decoration: none;
   padding: 4px;
   background-color: #8293e3;
 }
 
-.menu-item a:hover {
+.menu-principal-container .menu-item a:hover {
   background-color: #2832b8;
 }
 
 @media screen and (min-width: 800px) {
-  #burger {
-    display: none;
+  .site #burger {
+    display: block;
+    position: absolute;
   }
-  .menu-principal-container {
+  .site .menu-principal-container {
+    display: block;
+  }
+  .home #burger {
+    display: block;
+    position: absolute;
+    z-index: 2;
+  }
+  .home .menu-principal-container {
     display: block;
   }
 }
@@ -768,9 +793,8 @@ theme name: Lab 2 Lemieux Florence
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #8293e3;
   border-radius: 5px;
-  box-shadow: #39443e 1px -1px 10px;
+  left: -300px;
 }
 
 .site__main {
@@ -792,8 +816,14 @@ theme name: Lab 2 Lemieux Florence
 
 @media screen and (min-width: 800px) {
   .site {
-    grid-template-columns: 300px auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-columns: auto;
+    grid-template-areas: "sidebar" "header" "main" "footer";
+  }
+  .home {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto;
+    grid-template-areas: "sidebar" "header" "main" "footer";
   }
 }
 /*# sourceMappingURL=style.css.map */

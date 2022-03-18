@@ -15,6 +15,9 @@
         color: $color__font-main;
         margin: 10px 0px;
         font-family: $font__titre;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     &__liste {
         display: flex;

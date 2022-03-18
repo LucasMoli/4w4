@@ -45,6 +45,18 @@ function my_register_sidebars() {
     /* Register the 'primary' sidebar. */
     register_sidebar(
         array(
+            'id'            => 'entete_1',
+            'name'          => __( 'entete 1' ),
+            'description'   => __( 'Ce sitebar s\'affiche dans l\'entete du site'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+
+    register_sidebar(
+        array(
             'id'            => 'footer_colonne_1',
             'name'          => __( 'footer colonne 1' ),
             'description'   => __( 'Ce sitebar s\'affiche dans une colonne de page' ),
