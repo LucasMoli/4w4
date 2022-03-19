@@ -4,6 +4,11 @@
     transform : translateX(-300px);
 }
 
+@mixin block{
+    display : block;
+    position: absolute;
+}
+
 //bouton burger 
 #chk-burger{
     display: none;
@@ -25,8 +30,7 @@
 
 .menu-principal-container {
     transition : transform .3s;
-    display : block;
-    position: absolute;
+    @include block;
     padding-top: 0px;
     z-index: 1;
     background-color: $color__background-barre;
@@ -64,8 +68,7 @@
 }
 @media screen and (min-width : $largeur__media--tablette){
     .site #burger {
-        display : block;
-        position: absolute;
+        @include block;
     }
     .site .menu-principal-container {
         display : block;
@@ -73,8 +76,7 @@
     }
 
     .home #burger {
-        display : block;
-        position : absolute;
+        @include block;
         z-index : 2;
      
     }
