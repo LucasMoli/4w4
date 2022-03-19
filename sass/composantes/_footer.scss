@@ -1,3 +1,8 @@
+@mixin display__flex {
+  display: flex;
+  justify-content: center;
+}
+
 .site__footer {
     font-family: $font__titre;
     background-color: $color__background-footer;
@@ -5,13 +10,11 @@
     color: white;
   justify-content: center;
     &__menu{ // .site__footer__menu
-          display: flex;
           align-items: center;
-          justify-content: center;
+          @include display__flex;
       &__ul{ // .site__footer__menu__ul
-          display : flex;
+          @include display__flex;
           list-style-type: none;
-          justify-content:center;
           padding-right: 5rem;
           .menu-item { // .site__footer__menu__ul .menu-item
               margin : 10px 5px;

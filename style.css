@@ -614,15 +614,15 @@ COMPOSANTES
 }
 
 .site__footer__menu {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
 .site__footer__menu__ul {
   display: flex;
-  list-style-type: none;
   justify-content: center;
+  list-style-type: none;
   padding-right: 5rem;
 }
 
