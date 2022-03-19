@@ -491,8 +491,8 @@ COMPOSANTES
 }
 
 .site__header__titre {
-  display: flex;
   justify-content: space-around;
+  display: flex;
   align-items: center;
 }
 
@@ -510,8 +510,8 @@ COMPOSANTES
 }
 
 .utile {
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
 }
 
