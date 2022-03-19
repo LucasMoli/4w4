@@ -55,13 +55,17 @@ color: $color__font-footer;
   }
 }
 
-
+@mixin display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .site__footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  @include display;
   
   &__colonne{
     display: flex;
@@ -69,8 +73,6 @@ color: $color__font-footer;
     padding-top: 2rem;
 
     section{
-      display: flex;
-      flex-direction: column;
       //border: 1px solid yellow;
       padding: 10px 15px;
       background-color: rgba($color__background-header,.8);
@@ -78,7 +80,7 @@ color: $color__font-footer;
       box-shadow: rgb(255, 255, 255) 1px -1px 10px;
       flex: 0 0 30%;
       justify-content: space-between;
-      align-items: center;
+      @include display;
       
     }
     .footer__article{
