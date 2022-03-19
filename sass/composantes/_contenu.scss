@@ -4,6 +4,10 @@
         border-radius: 5px;
 }
 
+@mixin flex__direction{
+    display: flex;
+    flex-direction: column;
+}
 .site__main {
     
     padding: 10px 15px;
@@ -11,8 +15,7 @@
 }
 
 .formation {
-    display: flex;
-    flex-direction: column;
+    @include flex__direction;
 
     &__titre {
         font-size: 2rem;
@@ -31,8 +34,7 @@
     &__cours {
         @include contour;
         margin: 10px;
-        display: flex;
-        flex-direction: column;
+        @include flex__direction;
         width: 100%;
         @media screen and (min-width : $largeur__media--tablette){
             width: 45%;
