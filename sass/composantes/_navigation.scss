@@ -40,21 +40,21 @@
     }  
 
 
-
+@mixin margin__padding {
+    margin : 0;
+    padding :0;
+}
 
 /*.menu-principal-container{}*/
 .menu{
-    
+    @include margin__padding;
     list-style-type: none;
-    margin : 0;
-    padding :0;
     padding-top: 1.5rem;
     
 }
 
     .menu-item{
-        margin:0;
-        padding : 0;
+        @include margin__padding;
         a{
             display : block;
             text-decoration: none;
