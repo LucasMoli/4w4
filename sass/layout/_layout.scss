@@ -60,9 +60,13 @@ theme name: Lab 2 Lemieux Florence
     background-color: $color__background-footer;
 }
 
-.site {
-	display: grid;
+@mixin grid__gap {
+    display: grid;
     gap : 10px;
+}
+
+.site {
+	@include grid__gap;
 	@include grid;
 }
 
@@ -73,8 +77,7 @@ theme name: Lab 2 Lemieux Florence
     }
 
     .home {
-        display: grid;
-        gap : 10px;
+        @include grid__gap;
         @include grid;
     }
 
