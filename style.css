@@ -712,10 +712,10 @@ COMPOSANTES
 
 .recherche__input {
   background-color: transparent;
-  width: 100%;
-  transition: .25s;
   border: none;
   outline: none;
+  width: 100%;
+  transition: .25s;
 }
 
 .recherche__input:focus {
