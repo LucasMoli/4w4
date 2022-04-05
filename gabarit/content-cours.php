@@ -1,11 +1,8 @@
-<?php get_header() ?>
-<main class="principal">
-    <section class="formation">
-        <h2 class="formation__titre">Liste des cours du programme TIM</h2>
-        <div class="formation__liste">
-            <?php if (have_posts()):
-                while (have_posts()): the_post(); ?>
-                <article class="formation__cours">
+<?php $category = get_the_category(); 
+                    //var_dump($category)
+                    //echo $category[1]
+                ?>
+<article class="formation__cours <?php echo $category[1]->slug;  ?> " > 
                         <?php
                         $titre = get_the_title();
                         $titreFiltreCours = substr($titre, 7, -6);
@@ -19,9 +16,3 @@
                         <p class="cours__sigle"><?= $sigleCours; ?> </p>
                         <p class="cours__desc"> <?= $descCours; ?></p>
                     </article>
-                <?php endwhile ?>
-                <?php endif ?>
-        </div>
-    </section>
-</main>
-<?php get_footer() ?>

@@ -1,0 +1,42 @@
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.8rem;
+}
+h5{
+    font-size: 1.6rem;
+}
+h6{
+    font-size: 1.3rem;
+}
+p{
+    font-size: 1rem;
+}
+
+h1,h2 {
+    font-family: $police__titre__principal;
+}
+
+h3,h4{
+    font-family: $police__titre__secondaire;
+}
+
+h5,h6{
+    font-family: $police__titre__ternaire;
+}
+
+p{
+    font-family: $police__paragraphe;
+}
+
+a{
+    font-size: clamp(.9rem, 1vw, 1.2rem);
+    font-family: $police__titre__secondaire;
+}

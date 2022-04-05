@@ -1,0 +1,67 @@
+.menu-menu_accueil-container{ //nav
+
+.menu{ //ul
+display: flex;
+justify-content: space-around;
+align-items: center;
+    .acceuil__cours .menu-item-icone{//li
+     background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=academic-cap');
+    }
+    .acceuil__prof{//li
+
+    }
+    .acceuil__aide{//li
+
+    }
+    .acceuil__etudiant{//li
+
+    }
+    .menu-item{ //li
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 211px;
+        background-color: $color__bouton__background;
+       // width: 20%;
+        flex: 0 0 20%;
+
+        a{
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: clamp(1rem, 2vw, 2rem);
+            font-family: $police__titre__secondaire;
+            height: 100%;
+            color: $color__bouton__color;
+
+            &:visited{
+                color: $color__link__header-hover;
+            }
+            .menu-item-description{ //span
+                font-size: 1.5rem;
+
+            }
+            .menu-item-icone{
+                border: 1px solid #aaa;
+                width: 2rem;
+                height: 2rem;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 2rem;
+                margin-left: 50px;
+            }
+
+            &:hover {
+                background-color: $color__bouton__background--hover;
+                color: $color__link__header-hover;
+            }
+
+            &:visited{
+                color: $color__link__header-visited;
+            }
+        }
+    }
+}
+
+}

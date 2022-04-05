@@ -28,3 +28,10 @@ $color__font-main :rgb(240, 170, 151);
 $color__font-barre : rgb(255, 255, 255);
 $color__font-footer : rgb(255, 202, 188);
 $color__font-cours:rgb(62, 39, 163);//pour mieu voir le titre de category-cours
+
+/*----------------COULEUR BOUTON / LIEN MENU */
+$color__bouton__color:hsl(283, 86%, 60%);;
+$color__bouton__background:rgba(73, 4, 87, 0.8);
+$color__bouton__color--hover:hsl(0, 0%, 100%);;
+$color__bouton__background--hover:rgba(126, 0, 151, 0.8);
+$color__bouton__visited : hsl(276, 57%, 82%);

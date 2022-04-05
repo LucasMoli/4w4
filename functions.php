@@ -12,11 +12,22 @@ function cidw_4w4_register_nav_menu(){
     register_nav_menus( array(
         'menu_principal' => __( 'Menu principal', 'cidw_4w4' ),
         'menu_footer'  => __( 'Menu footer', 'cidw_4w4' ),
-        'footer_colonne'  => __( 'Menu footer colonne', 'cidw_4w4' )
+        'footer_colonne'  => __( 'Menu footer colonne', 'cidw_4w4' ),
+        'menu_cours'  => __( 'Menu cours', 'cidw_4w4' ),
+        'menu_accueil'  => __( 'Menu accueil', 'cidw_4w4' )
     ) );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
-
+/*------------------------------------------------------------------------*/
+function prefix_nav_description( $item_output, $item) {
+    if ( !empty( $item->description ) ) {
+        $item_output = str_replace( '</a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div>' .  '</a>',
+              $item_output );
+    }
+    return $item_output;
+}
+add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
 /* ---------------------------------------------------------------------- filtré les choix du menu principal */
 function cidw_4w4_filtre_choix_menu($obj_menu){
     //var_dump($obj_menu);
@@ -102,6 +113,47 @@ function my_register_sidebars() {
     /* Repeat register_sidebar() code for additional sidebars. */
 
 }
+/**
+ * 
+ * @param : WP_Query $query
+ */
+function cidw_4w4_pre_get_posts(WP_Query $query)
+{
 
+    //$ordre = get_query_var('ordre');
+    //$ordre = get_query_var('cletri');
+    if(!is_admin() && is_main_query() && is_category(array("cours", "jeu", "design", "video", "web", "utilitaire", "creation-3d"))){
+    //var_dump($query);
+    //die();
+    $query->set('posts_per_page', -1);
+    $query->set('orderby', 'title');
+    $query->set('order',  'ASC');
+    }
+    
+  /*if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
+    {
+    //$ordre = get_query_var('ordre');
+    $query->set('posts_per_page', -1);
+    // $query->set('orderby', $cle);
+    $query->set('orderby', 'title');
+    // $query->set('order',  $ordre);
+    $query->set('order',  'ASC');
+    // var_dump($query);
+    // die();
+   }*/
+}
+function cidw_4w4_query_vars($params){
+    $cle[] = "cletri";
+    $ordre[] = "ordre";
+    //$params["cletri"] = "title";
+    //var_dump($params); die();
+    return $params;
+}
+add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
+add_filter('query_vars', 'cidw_4w4_query_vars' );
 
+/*$query->set('posts_per_page', -1);
+    $query->set('orderby', 'title');
+    $query->set('order',  'ASC');
+*/
 ?>

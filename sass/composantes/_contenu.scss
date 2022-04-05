@@ -30,8 +30,12 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+   
     
     &__cours {
+        background-repeat: no-repeat;
+        background-position: 93% 3%;
         @include contour;
         margin: 10px;
         @include flex__direction;
@@ -48,10 +52,6 @@
 
 }
 
-
-
-
-
 .cours__titre {
     font-size: 1.5rem;
     color: $color__font-main;
@@ -66,4 +66,23 @@
 
 .cours__description {
     font-size: 1rem;
+}
+
+.web{
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe');
+}
+.jeu{
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
+}
+.design{
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
+}
+.creation-3d{
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
+}
+.utilitaire{
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
+}
+.video{
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
 }

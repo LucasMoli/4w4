@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
-theme name: exer-2-Lucas-Molina
-Author: Eddy martin
+theme name: 2022-4w4 TP1 Lucas Molina
+Author: Lucas Molina
 Author URI: https://github.com/LucasMoli?tab=repositories
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
@@ -18,6 +18,7 @@ VARIABLES
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
+/*----------------COULEUR BOUTON / LIEN MENU */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -406,6 +407,55 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3, h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucid Sans", Arial, sans-serif;
+}
+
+a {
+  font-size: clamp(0.9rem, 1vw, 1.2rem);
+  font-family: "Poppins", sans-serif;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -437,6 +487,8 @@ COMPOSANTES
 }
 
 .formation__cours {
+  background-repeat: no-repeat;
+  background-position: 93% 3%;
   background-color: #4120a9;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
@@ -473,6 +525,30 @@ COMPOSANTES
 
 .cours__description {
   font-size: 1rem;
+}
+
+.web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe");
+}
+
+.jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
+.creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
+}
+
+.utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
 }
 
 .site__header {
@@ -554,7 +630,7 @@ COMPOSANTES
   background-color: #8293e3;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
-  transform: translateX(-300px);
+  transform: translateX(-2090px);
   /*.menu-principal-container{}*/
 }
 
@@ -603,6 +679,36 @@ COMPOSANTES
   .home .menu-principal-container {
     display: block;
   }
+}
+
+/*----------------------------------------------
+Naviguation categorie cours
+-----------------------------------------------*/
+.menu-category_cours-container .menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu-category_cours-container .menu .menu-item {
+  display: block;
+  margin: 0 10px;
+  background-color: rgba(73, 4, 87, 0.8);
+}
+
+.menu-category_cours-container .menu .menu-item .a {
+  color: #bf41f1;
+}
+
+.menu-category_cours-container .menu .menu-item:hover a {
+  background-color: rgba(126, 0, 151, 0.8);
+}
+
+.menu-category_cours-container .menu .menu-item:hover a a {
+  color: white;
+}
+
+.menu-category_cours-container .menu .menu-item:visited a a {
+  color: #d6b7eb;
 }
 
 .site__footer {
@@ -732,6 +838,63 @@ COMPOSANTES
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+.menu-menu_accueil-container .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-menu_accueil-container .menu .acceuil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+}
+
+.menu-menu_accueil-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 211px;
+  background-color: rgba(73, 4, 87, 0.8);
+  flex: 0 0 20%;
+}
+
+.menu-menu_accueil-container .menu .menu-item a {
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  color: #bf41f1;
+}
+
+.menu-menu_accueil-container .menu .menu-item a:visited {
+  color: white;
+}
+
+.menu-menu_accueil-container .menu .menu-item a .menu-item-description {
+  font-size: 1.5rem;
+}
+
+.menu-menu_accueil-container .menu .menu-item a .menu-item-icone {
+  border: 1px solid #aaa;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 2rem;
+  margin-left: 50px;
+}
+
+.menu-menu_accueil-container .menu .menu-item a:hover {
+  background-color: rgba(126, 0, 151, 0.8);
+  color: white;
+}
+
+.menu-menu_accueil-container .menu .menu-item a:visited {
+  color: #d6b7eb;
 }
 
 /* ---------------------------------------------------------
