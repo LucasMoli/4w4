@@ -39,4 +39,8 @@ p{
 a{
     font-size: clamp(.9rem, 1vw, 1.2rem);
     font-family: $police__titre__secondaire;
+
+    &:hover a{
+        color: $color__bouton__visited;
+    }
 }

@@ -456,6 +456,10 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
+a:hover a {
+  color: #d6b7eb;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -695,7 +699,7 @@ Naviguation categorie cours
   background-color: rgba(73, 4, 87, 0.8);
 }
 
-.menu-category_cours-container .menu .menu-item .a {
+.menu-category_cours-container .menu .menu-item a {
   color: #bf41f1;
 }
 
@@ -709,6 +713,14 @@ Naviguation categorie cours
 
 .menu-category_cours-container .menu .menu-item:visited a a {
   color: #d6b7eb;
+}
+
+.menu-category_cours-container .menu .current-menu-item {
+  background-color: rgba(43, 2, 53, 0.8);
+}
+
+.menu-category_cours-container .menu .current-menu-item a {
+  color: #db99f5;
 }
 
 .site__footer {
@@ -840,17 +852,20 @@ Naviguation categorie cours
   outline: none;
 }
 
-.menu-menu_accueil-container .menu {
+.menu-accueil-container .menu,
+.menu-evenement-container .menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.menu-menu_accueil-container .menu .acceuil__cours .menu-item-icone {
+.menu-accueil-container .menu .acceuil__cours .menu-item-icone,
+.menu-evenement-container .menu .acceuil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
 }
 
-.menu-menu_accueil-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item,
+.menu-evenement-container .menu .menu-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -860,7 +875,8 @@ Naviguation categorie cours
   flex: 0 0 20%;
 }
 
-.menu-menu_accueil-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a,
+.menu-evenement-container .menu .menu-item a {
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -870,30 +886,34 @@ Naviguation categorie cours
   color: #bf41f1;
 }
 
-.menu-menu_accueil-container .menu .menu-item a:visited {
+.menu-accueil-container .menu .menu-item a:visited,
+.menu-evenement-container .menu .menu-item a:visited {
   color: white;
 }
 
-.menu-menu_accueil-container .menu .menu-item a .menu-item-description {
+.menu-accueil-container .menu .menu-item a .menu-item-description,
+.menu-evenement-container .menu .menu-item a .menu-item-description {
   font-size: 1.5rem;
 }
 
-.menu-menu_accueil-container .menu .menu-item a .menu-item-icone {
+.menu-accueil-container .menu .menu-item a .menu-item-icone,
+.menu-evenement-container .menu .menu-item a .menu-item-icone {
   border: 1px solid #aaa;
   width: 2rem;
   height: 2rem;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 2rem;
-  margin-left: 50px;
 }
 
-.menu-menu_accueil-container .menu .menu-item a:hover {
+.menu-accueil-container .menu .menu-item a:hover,
+.menu-evenement-container .menu .menu-item a:hover {
   background-color: rgba(126, 0, 151, 0.8);
   color: white;
 }
 
-.menu-menu_accueil-container .menu .menu-item a:visited {
+.menu-accueil-container .menu .menu-item a:visited,
+.menu-evenement-container .menu .menu-item a:visited {
   color: #d6b7eb;
 }
 

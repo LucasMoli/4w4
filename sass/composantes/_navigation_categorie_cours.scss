@@ -10,7 +10,7 @@ Naviguation categorie cours
         display: block;
         margin: 0 10px;
         background-color: $color__bouton__background;
-        .a{
+        a{
             color: $color__bouton__color;
             
         }
@@ -28,6 +28,12 @@ Naviguation categorie cours
             
         }
         
+    }
+    .current-menu-item{
+        background-color: $color__bouton__background--current;
+        a{
+            color: $color__bouton__color--current; 
+        }
     }
     }
 }

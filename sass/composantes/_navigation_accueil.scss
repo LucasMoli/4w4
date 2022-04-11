@@ -1,4 +1,5 @@
-.menu-menu_accueil-container{ //nav
+.menu-accueil-container, 
+.menu-evenement-container{ //nav
 
 .menu{ //ul
 display: flex;
@@ -49,7 +50,7 @@ align-items: center;
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: 2rem;
-                margin-left: 50px;
+                
             }
 
             &:hover {
@@ -65,3 +66,5 @@ align-items: center;
 }
 
 }
+
+//fin menu-accueil-container

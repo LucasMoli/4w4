@@ -8,10 +8,17 @@
     <div class="animation__bloc">4</div>
     <div class="animation__bloc">5</div>
 </section>
+
 <?php 
-    wp_nav_menu(array('menu'=>'menu_accueil',
+    wp_nav_menu(array('menu'=>'accueil',
                     'container'=>'nav'));
 ?>
+
+<?php 
+    wp_nav_menu(array('menu'=>'evenement',
+                    'container'=>'nav'));
+?>
+
 
    <?php if (have_posts()): the_post(); ?>
         <?php the_title() ?>
