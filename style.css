@@ -860,6 +860,11 @@ Naviguation categorie cours
   outline: none;
 }
 
+.menu-accueil-container,
+.menu-evenement-container {
+  animation: anim-navigation 1s forwards;
+}
+
 .menu-accueil-container .menu,
 .menu-evenement-container .menu {
   display: flex;
@@ -923,6 +928,15 @@ Naviguation categorie cours
 .menu-accueil-container .menu .menu-item a:visited,
 .menu-evenement-container .menu .menu-item a:visited {
   color: #d6b7eb;
+}
+
+@keyframes anim-navigation {
+  0% {
+    transform: translateX(-150vh);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* ---------------------------------------------------------

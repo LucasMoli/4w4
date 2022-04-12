@@ -1,6 +1,7 @@
 .menu-accueil-container, 
 .menu-evenement-container{ //nav
 
+animation : anim-navigation 1s forwards;
 .menu{ //ul
 display: flex;
 justify-content: space-around;
@@ -66,5 +67,12 @@ align-items: center;
 }
 
 }
-
+@keyframes anim-navigation {
+    0% {
+      transform : translateX(-150vh);  
+    }
+    100% {
+        transform : translateX(0);  
+    }
+}
 //fin menu-accueil-container
