@@ -767,12 +767,20 @@ Naviguation categorie cours
   align-items: center;
   flex-direction: row;
   text-align: center;
+  background-color: #070e27;
+  width: 101.6%;
+  justify-content: center;
   color: #ffcabc;
+}
+
+.footer__text__titre {
+  background-color: #070e27;
 }
 
 .footer__text__author {
   justify-content: space-around;
   padding-left: 5rem;
+  background-color: #070e27;
 }
 
 .site__footer {

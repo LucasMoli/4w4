@@ -42,11 +42,14 @@ display: flex;
 align-items: center;
 flex-direction: row;
 text-align: center;
+background-color:$color__background-footer-text ;
+width: 101.6%;
+justify-content: center;
 
 
 color: $color__font-footer;
   &__titre{
-
+    background-color:$color__background-footer-text ;
   }
   &__presentation{
 
@@ -54,7 +57,7 @@ color: $color__font-footer;
   &__author{
     justify-content: space-around;
     padding-left: 5rem;
-
+    background-color:$color__background-footer-text ;
   }
 }
 
