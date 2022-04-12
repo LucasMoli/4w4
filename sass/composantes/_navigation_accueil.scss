@@ -9,14 +9,26 @@ align-items: center;
     .acceuil__cours .menu-item-icone{//li
      background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=academic-cap');
     }
-    .acceuil__prof{//li
+    .accueil__reglements{//li
 
     }
-    .acceuil__aide{//li
+    .accueil__profs{//li
 
     }
-    .acceuil__etudiant{//li
+    .accueil__joindre{//li
 
+    }
+    .evenement_journee{
+
+    }
+    .evenement_porte1{
+
+    }
+    .evenement_projet{
+
+    }
+    .evenement_porte2{
+        
     }
     .menu-item{ //li
         display: flex;
@@ -67,6 +79,8 @@ align-items: center;
 }
 
 }
+
+//fin menu-accueil-container
 @keyframes anim-navigation {
     0% {
       transform : translateX(-150vh);  
@@ -75,4 +89,3 @@ align-items: center;
         transform : translateX(0);  
     }
 }
-//fin menu-accueil-container
