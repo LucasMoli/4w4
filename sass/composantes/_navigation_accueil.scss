@@ -9,27 +9,28 @@ align-items: center;
     .acceuil__cours .menu-item-icone{//li
      background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=academic-cap');
     }
-    .accueil__reglements{//li
+    .accueil_reglements .menu-item-icone{//li
+        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=exclamation');
+    }
+    .accueil_profs .menu-item-icone{//li
+        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=user-group');
+    }
+    .accueil_joindre .menu-item-icone{//li
+        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=information-circle');
+    }
+    .evenement_journee .menu-item-icone{
+        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=home');
+    }
+    .evenement_porte1 .menu-item-icone{
+        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=library');
+    }
+    .evenement_projet .menu-item-icone{
+        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=collection');
+    }
+    .evenement_porte2 .menu-item-icone{
+        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=library');
+    }
 
-    }
-    .accueil__profs{//li
-
-    }
-    .accueil__joindre{//li
-
-    }
-    .evenement_journee{
-
-    }
-    .evenement_porte1{
-
-    }
-    .evenement_projet{
-
-    }
-    .evenement_porte2{
-        
-    }
     .menu-item{ //li
         display: flex;
         flex-direction: column;
@@ -57,7 +58,7 @@ align-items: center;
 
             }
             .menu-item-icone{
-                border: 1px solid #aaa;
+                //border: 1px solid #aaa;
                 width: 2rem;
                 height: 2rem;
                 background-repeat: no-repeat;

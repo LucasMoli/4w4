@@ -877,6 +877,41 @@ Naviguation categorie cours
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
 }
 
+.menu-accueil-container .menu .accueil_reglements .menu-item-icone,
+.menu-evenement-container .menu .accueil_reglements .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=exclamation");
+}
+
+.menu-accueil-container .menu .accueil_profs .menu-item-icone,
+.menu-evenement-container .menu .accueil_profs .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=user-group");
+}
+
+.menu-accueil-container .menu .accueil_joindre .menu-item-icone,
+.menu-evenement-container .menu .accueil_joindre .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=information-circle");
+}
+
+.menu-accueil-container .menu .evenement_journee .menu-item-icone,
+.menu-evenement-container .menu .evenement_journee .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=home");
+}
+
+.menu-accueil-container .menu .evenement_porte1 .menu-item-icone,
+.menu-evenement-container .menu .evenement_porte1 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=library");
+}
+
+.menu-accueil-container .menu .evenement_projet .menu-item-icone,
+.menu-evenement-container .menu .evenement_projet .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=collection");
+}
+
+.menu-accueil-container .menu .evenement_porte2 .menu-item-icone,
+.menu-evenement-container .menu .evenement_porte2 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=library");
+}
+
 .menu-accueil-container .menu .menu-item,
 .menu-evenement-container .menu .menu-item {
   display: flex;
@@ -911,7 +946,6 @@ Naviguation categorie cours
 
 .menu-accueil-container .menu .menu-item a .menu-item-icone,
 .menu-evenement-container .menu .menu-item a .menu-item-icone {
-  border: 1px solid #aaa;
   width: 2rem;
   height: 2rem;
   background-repeat: no-repeat;
