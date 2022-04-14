@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: 2022-4w4 TP1 Lucas Molina
+theme name: 2022-4w4-TP1-Lucas-Molina
 Author: Lucas Molina
 Author URI: https://github.com/LucasMoli?tab=repositories
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -1006,9 +1006,6 @@ ANIMATION
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
-/*
-theme name: Lab 2 Lemieux Florence
-*/
 .site {
   background-color: #ADE292;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -1024,8 +1021,8 @@ theme name: Lab 2 Lemieux Florence
   left: 0;
   right: 0;
   background-color: #550baa;
-  clip-path: polygon(87% 0, 100% 0, 100% 100%, 49% 100%);
-  z-index: -3;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 49% 100%);
+  z-index: -10;
 }
 
 .site__header {

@@ -1,92 +1,114 @@
-.menu-accueil-container, 
-.menu-evenement-container{ //nav
+.menu-accueil-container,
+.menu-evenement-container {
+    //nav
 
-animation : anim-navigation 1s forwards;
-.menu{ //ul
-display: flex;
-justify-content: space-around;
-align-items: center;
-    .acceuil__cours .menu-item-icone{//li
-     background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=academic-cap');
-    }
-    .accueil_reglements .menu-item-icone{//li
-        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=exclamation');
-    }
-    .accueil_profs .menu-item-icone{//li
-        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=user-group');
-    }
-    .accueil_joindre .menu-item-icone{//li
-        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=information-circle');
-    }
-    .evenement_journee .menu-item-icone{
-        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=home');
-    }
-    .evenement_porte1 .menu-item-icone{
-        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=library');
-    }
-    .evenement_projet .menu-item-icone{
-        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=collection');
-    }
-    .evenement_porte2 .menu-item-icone{
-        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=library');
-    }
+    animation: anim-navigation 1s forwards;
 
-    .menu-item{ //li
+    .menu {
+        //ul
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        height: 211px;
-        background-color: $color__bouton__background;
-       // width: 20%;
-        flex: 0 0 20%;
 
-        a{
-            align-items: center;
+        .acceuil__cours .menu-item-icone {
+            //li
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=academic-cap');
+        }
+
+        .accueil_reglements .menu-item-icone {
+            //li
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=exclamation');
+        }
+
+        .accueil_profs .menu-item-icone {
+            //li
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=user-group');
+        }
+
+        .accueil_joindre .menu-item-icone {
+            //li
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=information-circle');
+        }
+
+        .evenement_journee .menu-item-icone {
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=home');
+        }
+
+        .evenement_porte1 .menu-item-icone {
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=library');
+        }
+
+        .evenement_projet .menu-item-icone {
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=collection');
+        }
+
+        .evenement_porte2 .menu-item-icone {
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=library');
+        }
+
+        .menu-item {
+            //li
+            display: flex;
+            flex-direction: column;
             justify-content: center;
-            text-decoration: none;
-            font-size: clamp(1rem, 2vw, 2rem);
-            font-family: $police__titre__secondaire;
-            height: 100%;
-            color: $color__bouton__color;
+            align-items: center;
+            height: 211px;
+            background-color: $color__bouton__background;
+            // width: 20%;
+            flex: 0 0 20%;
 
-            &:visited{
-                color: $color__link__header-hover;
-            }
-            .menu-item-description{ //span
-                font-size: 1.5rem;
+            a {
+                //display: flex;
+                //flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                font-size: clamp(1rem, 2vw, 2rem);
+                font-family: $police__titre__secondaire;
+                height: 100%;
+                color: $color__bouton__color;
 
-            }
-            .menu-item-icone{
-                //border: 1px solid #aaa;
-                width: 2rem;
-                height: 2rem;
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: 2rem;
-                
-            }
+                &:visited {
+                    color: $color__link__header-hover;
+                }
 
-            &:hover {
-                background-color: $color__bouton__background--hover;
-                color: $color__link__header-hover;
-            }
+                .menu-item-description {
+                    //span
+                    font-size: 1.5rem;
 
-            &:visited{
-                color: $color__link__header-visited;
+                }
+
+                .menu-item-icone {
+                    //border: 1px solid #aaa;
+                    width: 2rem;
+                    height: 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 2rem;
+
+                }
+
+                &:hover {
+                    background-color: $color__bouton__background--hover;
+                    color: $color__link__header-hover;
+                }
+
+                &:visited {
+                    color: $color__link__header-visited;
+                }
             }
         }
     }
-}
 
 }
 
 //fin menu-accueil-container
 @keyframes anim-navigation {
     0% {
-      transform : translateX(-150vh);  
+        transform: translateX(-150vh);
     }
+
     100% {
-        transform : translateX(0);  
+        transform: translateX(0);
     }
 }
