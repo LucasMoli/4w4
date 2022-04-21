@@ -22,7 +22,7 @@ add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
 function prefix_nav_description( $item_output, $item) {
     if ( !empty( $item->description ) ) {
         $item_output = str_replace( '</a>',
-        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div>' .  '</a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="uneClasse"><div class="menu-item-icone"></div></div>' .  '</a>',
               $item_output );
     }
     return $item_output;

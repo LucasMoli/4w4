@@ -78,6 +78,12 @@
 
                 }
 
+                .uneClasse
+                {
+                    display: flex;
+                    justify-content: center;
+                }
+
                 .menu-item-icone {
                     //border: 1px solid #aaa;
                     width: 2rem;
@@ -85,7 +91,6 @@
                     background-repeat: no-repeat;
                     background-position: center center;
                     background-size: 2rem;
-
                 }
 
                 &:hover {

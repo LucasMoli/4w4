@@ -944,6 +944,12 @@ Naviguation categorie cours
   font-size: 1.5rem;
 }
 
+.menu-accueil-container .menu .menu-item a .uneClasse,
+.menu-evenement-container .menu .menu-item a .uneClasse {
+  display: flex;
+  justify-content: center;
+}
+
 .menu-accueil-container .menu .menu-item a .menu-item-icone,
 .menu-evenement-container .menu .menu-item a .menu-item-icone {
   width: 2rem;
