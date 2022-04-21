@@ -45,6 +45,13 @@ wp_nav_menu(array(
 
 
 </footer>
+
+<div class="boite__modale ">
+    <button class="boite__modale__fermeture">x</button>    
+<a class="boite__modale__texte">
+    ceci est un test
+</a>
+</div>
 <?php wp_footer(); ?>
 </body>
 

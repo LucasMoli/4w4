@@ -1,0 +1,20 @@
+.boite__modale{
+    position: fixed;
+    top:25vh;
+    left:25vw;
+    border: 5px solid grey;
+    background-color: red;
+    width: 50vw;
+    height: 50vh;
+    transform: scale(.1);
+    transition: all 1s ease-in-out;
+    &__fermeture{
+
+    }
+    &__texte{
+
+    }
+    &:hover{
+        transform: scale(1);
+    }
+}
