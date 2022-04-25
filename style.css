@@ -515,6 +515,10 @@ COMPOSANTES
   }
 }
 
+.formation__cours__invisible {
+  display: none;
+}
+
 .cours__titre {
   font-size: 1.5rem;
   color: #f0aa97;
@@ -688,19 +692,28 @@ COMPOSANTES
 /*----------------------------------------------
 Naviguation categorie cours
 -----------------------------------------------*/
+.menu-category_cours-container {
+  display: flex;
+  justify-content: center;
+}
+
 .menu-category_cours-container .menu {
   display: flex;
   list-style: none;
 }
 
 .menu-category_cours-container .menu .menu-item {
-  display: block;
+  display: flex;
   margin: 0 10px;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(73, 4, 87, 0.8);
 }
 
 .menu-category_cours-container .menu .menu-item a {
   color: #bf41f1;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .menu-category_cours-container .menu .menu-item:hover a {
@@ -988,7 +1001,7 @@ Naviguation categorie cours
   width: 50vw;
   height: 50vh;
   transform: scale(0);
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .ouvrir {

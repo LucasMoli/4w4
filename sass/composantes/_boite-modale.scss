@@ -7,13 +7,15 @@
     width: 50vw;
     height: 50vh;
     transform: scale(0);
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     &__fermeture{
 
     }
     &__texte{
 
     }
+
+
 }
 .ouvrir{
     transform: scale(1);

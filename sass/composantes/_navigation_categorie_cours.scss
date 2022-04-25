@@ -3,15 +3,21 @@ Naviguation categorie cours
 -----------------------------------------------*/
 
 .menu-category_cours-container {  //nav
+    display: flex;
+    justify-content: center;
     .menu {  //ul
         display: flex;
         list-style: none;
     .menu-item{  //li
-        display: block;
+        display: flex;
         margin: 0 10px;
+        justify-content: center;
+        align-items: center;
         background-color: $color__bouton__background;
         a{
             color: $color__bouton__color;
+            padding-left: 6px;
+            padding-right: 6px;
             
         }
         &:hover a{
