@@ -934,6 +934,13 @@ Naviguation categorie cours
   height: 211px;
   background-color: rgba(73, 4, 87, 0.8);
   flex: 0 0 20%;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-accueil-container .menu .menu-item:hover,
+.menu-evenement-container .menu .menu-item:hover {
+  transform: scale(1.1);
 }
 
 .menu-accueil-container .menu .menu-item a,
@@ -996,12 +1003,21 @@ Naviguation categorie cours
   position: fixed;
   top: 25vh;
   left: 25vw;
-  border: 5px solid grey;
-  background-color: red;
+  border: 5px solid black;
+  background-color: #4120a9;
   width: 50vw;
   height: 50vh;
   transform: scale(0);
   transition: all 0.5s ease-in-out;
+}
+
+.boite__modale__fermeture {
+  position: fixed;
+  left: 97.6%;
+}
+
+.boite__modale__texte {
+  color: white;
 }
 
 .ouvrir {
@@ -1042,7 +1058,7 @@ ANIMATION
 LAYOUT
 --------------------------------------------------------- */
 .site {
-  background-color: #ADE292;
+  background-color: #000000;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 

@@ -6,20 +6,20 @@ La fonction de rappel : function(WP_Customizer, $manager)
 
 */
 
-add_action('customize', function(WP_Customize_Manager $manager){
-    $manager -> add_section("apparence_body", 
+add_action('customize_register', function(WP_Customize_Manager $manager){
+    $manager->add_section("apparence_body", 
                             [
-                                "title"=>"Apparence_body"
+                                "title"=>"Apparence body"
                             ]);
     $manager->add_setting('background_body',
-                            ["default"=>"#fffffff",
+                            ["default"=>"#ffffff",
                             "sanitize_callback"=>"sanitize_hex_color"
                             ]);// permet de valider/filtrer la donnée
     $manager->add_control('background_body',
                             ["section"=>"apparence_body",
                             "setting"=>"background_body",
                             "label"=>"La couleur du background body"]);
-})
+});
  /* 
   La méthode add_section( id de la section,
                            [

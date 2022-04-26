@@ -16,11 +16,11 @@
     <?php show_admin_bar(true); ?>
 </head>
 
-<body <?php body_class("site"); ?>>
+<body <?php body_class("site"); ?> style="background_color:<?= get_theme_mod("background_body");?>;" >
     <header class="site__header">
         <?= get_custom_logo(); ?>
         <section class="site__header__titre">
-            <h1 class="header__titre">
+              <h1 class="header__titre">
                 <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
                     <?php bloginfo('name'); ?>
             </h1>
