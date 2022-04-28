@@ -31,6 +31,7 @@
     left: 0;
     right: 0;
     background-color: $color__background-body-clip;
+    background-color: #fff;
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 49% 100% );
     z-index: -10;
 }

@@ -1,5 +1,5 @@
 /* ---------------- BACKGROUND */
-$color__background-body : #000000;//vert pale comme background pour faire resortir le mauve
+//$color__background-body : #000000;//vert pale comme background pour faire resortir le mauve
 $color__background-body-clip : #550baa;//mauve fonçé pour faire ressortir chaque carré 
 $color__background-main : #905ed0;//mauve pâle pour complémenter le mauve fonçé
 $color__background-cours : #4120a9;//un peu de bleu/mauve qui accompagne le background body clip 
@@ -24,7 +24,7 @@ $color__link__header-hover : hsl(0, 0%, 100%);
 $color__link__header-visited : hsl(276, 57%, 82%);
 
 /* ---------------- FONT */
-$color__font-header : rgb(250, 146, 146);
+$color__font-header : rgb(250, 146, 146);    
 $color__font-main :rgb(240, 170, 151);
 $color__font-barre : rgb(255, 255, 255);
 $color__font-footer : rgb(255, 202, 188);

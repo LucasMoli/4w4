@@ -610,6 +610,13 @@ COMPOSANTES
   padding-bottom: -20px;
 }
 
+.test {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: white;
+}
+
 #chk-burger {
   display: none;
 }
