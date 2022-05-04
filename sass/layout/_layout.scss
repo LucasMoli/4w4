@@ -16,8 +16,8 @@
 }
 
 .site {
-    //background-color: rgb(122, 176, 207);
-    background-color: $color__background-body;
+    background-color: black;
+    //background-color: $color__background-body;
     font-family: $font__main;
 }
 
@@ -30,10 +30,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: $color__background-body-clip;
-    background-color: #fff;
+    //background-color: #fff;
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 49% 100% );
     z-index: -10;
+    height: 200vh;
 }
 
 .site__header{
@@ -52,8 +52,8 @@
 .site__main{
     grid-area: main;
     @include rgba__main;
-    
-
+    display: flex;
+    flex-direction: column;
 }
 
 .site__footer{

@@ -58,9 +58,10 @@
             flex: 0 0 20%;
             transform: scale(1);
             transition: all 0.2s ease-in-out;
+
             &:hover {
                 transform: scale(1.1);
-                
+
             }
 
             a {
@@ -84,8 +85,7 @@
 
                 }
 
-                .uneClasse
-                {
+                .uneClasse {
                     display: flex;
                     justify-content: center;
                 }
