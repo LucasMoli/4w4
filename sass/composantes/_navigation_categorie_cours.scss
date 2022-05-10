@@ -5,27 +5,28 @@ Naviguation categorie cours
 .menu-category_cours-container {  //nav
     display: flex;
     justify-content: center;
+    align-items: center;
+    width:100%;
+    
     .menu {  //ul
         display: flex;
         list-style: none;
     .menu-item{  //li
         display: flex;
-        margin: 0 10px;
         justify-content: center;
         align-items: center;
         background-color: $color__bouton__background;
+        
+        &:hover{
+            background-color: $color__bouton__background--hover;
+        &:hover a{
+            color:$color__bouton__color--hover ;
+        }
+        }
         a{
             color: $color__bouton__color;
-            padding-left: 6px;
-            padding-right: 6px;
-            
-        }
-        &:hover a{
-            background-color: $color__bouton__background--hover;
-
-                a{
-                    color: $color__bouton__color--hover;
-                }
+            padding-left: 20px;
+            padding-right: 20px;
         }
         &:visited a{
             a{
@@ -42,4 +43,4 @@ Naviguation categorie cours
         }
     }
     }
-}
+    }

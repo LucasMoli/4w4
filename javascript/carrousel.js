@@ -1,25 +1,35 @@
 (function(){
-console.log("vive javascript");
+console.log("vive carrousel");
 
-let boite__modale = document.querySelector('.boite__modale');
-let boite__modale__texte = document.querySelector('.boite__modale__texte');
-let boite__modale__fermeture = document.querySelector('.boite__modale__fermeture');
-let cours__desc__ouvrir = document.querySelectorAll('.cours__desc__ouvrir');
-console.log(cours__desc__ouvrir.length);
+let boite__carrousel = document.querySelector('.boite__carrousel');
+let boite__carrousel__naviguation = document.querySelector('.boite__carrousel__naviguation');
+let boite__carrousel__fermeture = document.querySelector('.boite__carrousel__fermeture');
+let galerie__img = document.querySelectorAll('.galerie img');
+console.log(galerie__img.length);
 
-boite__modale__fermeture.addEventListener('mousedown', function(){
-    boite__modale.classList.remove('ouvrir');
+boite__carrousel__fermeture.addEventListener('mousedown', function(){
+    boite__carrousel.classList.remove('ouvrir');
     
 })
 
-for (const bout of cours__desc__ouvrir) {
-    console.log(bout.tagName)
-    bout.addEventListener('mousedown', function(){
-        console.log(this.parentNode.parentNode.children[0].innerHTML);
+let elmImg = document.createElement("img")
+boite__carrousel.append(elmImg)
+let index = 0; 
+
+for (const img of galerie__img) {
+    let bouton = document.createElement('button')
+    bouton.dataset.index = index++
+    boite__carrousel__naviguation.append(bouton)
+    bouton.addEventListener('mousedown', function(){
+        elmImg.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src'))
+    })
+    console.log(img.tagName)
+    img.addEventListener('mousedown', function(){
+        console.log(this.getAttribute("src"));
         
-        boite__modale.classList.add('ouvrir');
-        console.log(boite__modale.classList);
-        boite__modale__texte.innerHTML = this.parentNode.parentNode.children[0].innerHTML
+        boite__carrousel.classList.add('ouvrir');
+        console.log(boite__carrousel.classList);
+        elmImg.setAttribute('src', this.getAttribute("src"))
     })
 }
 })()

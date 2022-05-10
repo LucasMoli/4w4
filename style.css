@@ -367,6 +367,10 @@ a:hover, a:active {
   outline: 0;
 }
 
+a:hover {
+  color: white;
+}
+
 .site__footer a {
   color: #a70be5;
 }
@@ -456,8 +460,8 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
-a:hover a {
-  color: #d6b7eb;
+a:hover {
+  color: white;
 }
 
 /* ---------------------------------------------------------
@@ -488,6 +492,10 @@ COMPOSANTES
 .formation__liste {
   display: flex;
   flex-wrap: wrap;
+}
+
+.formation svg:hover {
+  fill: white;
 }
 
 .formation__cours {
@@ -695,6 +703,8 @@ Naviguation categorie cours
 .menu-category_cours-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .menu-category_cours-container .menu {
@@ -704,24 +714,23 @@ Naviguation categorie cours
 
 .menu-category_cours-container .menu .menu-item {
   display: flex;
-  margin: 0 10px;
   justify-content: center;
   align-items: center;
   background-color: rgba(73, 4, 87, 0.8);
 }
 
-.menu-category_cours-container .menu .menu-item a {
-  color: #bf41f1;
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.menu-category_cours-container .menu .menu-item:hover a {
+.menu-category_cours-container .menu .menu-item:hover {
   background-color: rgba(126, 0, 151, 0.8);
 }
 
-.menu-category_cours-container .menu .menu-item:hover a a {
+.menu-category_cours-container .menu .menu-item:hover:hover a {
   color: white;
+}
+
+.menu-category_cours-container .menu .menu-item a {
+  color: #bf41f1;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .menu-category_cours-container .menu .menu-item:visited a a {
@@ -928,14 +937,16 @@ Naviguation categorie cours
 .menu-accueil-container .menu .menu-item,
 .menu-evenement-container .menu .menu-item {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 211px;
+  width: 100%;
   background-color: rgba(73, 4, 87, 0.8);
   flex: 0 0 20%;
   transform: scale(1);
   transition: all 0.2s ease-in-out;
+  border-radius: 20%;
+  overflow: hidden;
 }
 
 .menu-accueil-container .menu .menu-item:hover,
@@ -945,6 +956,8 @@ Naviguation categorie cours
 
 .menu-accueil-container .menu .menu-item a,
 .menu-evenement-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -961,13 +974,18 @@ Naviguation categorie cours
 
 .menu-accueil-container .menu .menu-item a .menu-item-description,
 .menu-evenement-container .menu .menu-item a .menu-item-description {
-  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
 .menu-accueil-container .menu .menu-item a .uneClasse,
 .menu-evenement-container .menu .menu-item a .uneClasse {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-icone,
@@ -999,24 +1017,25 @@ Naviguation categorie cours
   }
 }
 
-.boite__modale {
+.boite__modale, .boite__carrousel {
   position: fixed;
   top: 25vh;
   left: 25vw;
-  border: 5px solid black;
-  background-color: #4120a9;
   width: 50vw;
   height: 50vh;
+  border: 5px solid black;
+  background-color: #4120a9;
   transform: scale(0);
   transition: all 0.5s ease-in-out;
 }
 
-.boite__modale__fermeture {
-  position: fixed;
+.boite__modale__fermeture, .boite__carrousel__fermeture {
+  position: absolute;
   left: 97.6%;
+  z-index: 1;
 }
 
-.boite__modale__texte {
+.boite__modale__texte, .boite__carrousel__texte {
   color: white;
 }
 
@@ -1024,9 +1043,56 @@ Naviguation categorie cours
   transform: scale(1);
 }
 
+.boite__carrousel {
+  top: 12.5%;
+  left: 12.5%;
+  width: 75%;
+  height: 75%;
+}
+
+.boite__carrousel__fermeture {
+  position: absolute;
+  left: 98.1%;
+}
+
+.boite__carrousel img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.boite__carrousel__naviguation {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+.boite__carrousel__naviguation button {
+  width: 20px;
+  height: 20px;
+  margin: 20px 10px;
+  border-radius: 100%;
+}
+
+.boite__carrousel__naviguation button:focus {
+  background-color: black;
+}
+
+.galerie {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
+
 @media screen and (min-width: 500px) {
   .galerie {
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -1049,7 +1115,7 @@ ANIMATION
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #1161f7;
+  background-color: lightgreen;
   color: #fff;
   font-size: 3rem;
   animation: anim-entete 1s forwards;
@@ -1139,7 +1205,7 @@ LAYOUT
   right: 0;
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 49% 100%);
   z-index: -10;
-  height: 200vh;
+  height: 230vh;
 }
 
 .site__header {

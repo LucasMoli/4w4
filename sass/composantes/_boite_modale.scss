@@ -1,0 +1,64 @@
+.boite__modale, .boite__carrousel{
+    position: fixed;
+    top:25vh;
+    left:25vw;
+    width: 50vw;
+    height: 50vh;
+    border: 5px solid black;
+    background-color:$color__background-cours;
+    transform: scale(0);
+    transition: all 0.5s ease-in-out;
+    &__fermeture{
+        position: absolute;
+        left: 97.6%;
+        z-index: 1;
+        
+    }
+    &__texte{
+        color: white;
+    }
+
+
+}
+.ouvrir{
+    transform: scale(1);
+}
+
+.boite__carrousel{
+    //position: absolute;
+    top:12.5%;
+    left:12.5%;
+    width: 75%;
+    height: 75%;
+    &__fermeture{
+        position: absolute;
+       left: 98.1%;
+        
+    }
+
+    img{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    &__naviguation{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        bottom: 0;
+        z-index:1;
+        button{
+            width: 20px;
+            height: 20px;
+            margin: 20px 10px;
+            border-radius: 100%;
+            &:focus{
+                background-color: black;
+            }
+        }
+    }
+}

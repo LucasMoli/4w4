@@ -31,8 +31,9 @@
         display: flex;
         flex-wrap: wrap;
     }
-
-
+    svg:hover{
+        fill:white;
+    }
 
     &__cours {
         background-repeat: no-repeat;
