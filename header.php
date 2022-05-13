@@ -25,6 +25,7 @@
             background-color: <?= get_theme_mod("background_body"); ?>;
         }
 
+
        /* .site__main {
             background-color: <?= get_theme_mod("background_body"); ?>;
         }*/

@@ -8,5 +8,7 @@ Ce projet de site wordpress dans le cadre du cours....:
 -Les fonctions du thème se trouvent dans «functions.php»
 -Les modèle principal est : «index.php»
 
+Github page: https://github.com/LucasMoli/4w4
+
 Pour modifier readme.md
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
